@@ -1,23 +1,29 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+.btn {
+  background: $sage-light-grey;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  padding: 5px 31px 5px 11px;
+  cursor: pointer;
+  font-family: $arial-font-stack;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
-
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  &:link, &:visited {
+    color: black;
+    text-decoration: none;
   }
 
-  li { display: inline-block; }
+  .promo-btn {
+    padding: 8px 47px 12px 15px;
+    background-color: $sage-mid-grey;
+    border: none;
 
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
+    &:before {
+      box-shadow: none;
+    }
+
+    .promo-title {
+      margin-bottom: 4px;
+      color: black;
+    }
   }
 }
