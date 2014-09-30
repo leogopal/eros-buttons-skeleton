@@ -146,13 +146,13 @@ class ErosButtonsSkeleton {
 	 * require additional plugin files
 	 */
 	private function includes() {
-		require_once( EBSS_INCLUDES . 'admin/register-cpt-tax.php' );		// register custom post type and taxonomy
-		require_once( EBSS_INCLUDES . 'admin/register-metaboxes.php' );		// register metaboxes
+		// require_once( EBSS_INCLUDES . 'admin/register-cpt-tax.php' );		// register custom post type and taxonomy
+		// require_once( EBSS_INCLUDES . 'admin/register-metaboxes.php' );		// register metaboxes
 		require_once( EBSS_INCLUDES . 'admin/register-shortcode.php' );		// register shortcode
 		//require_once( EBSS_INCLUDES . 'admin/member-metaboxes.php' );
-		require_once( EBSS_INCLUDES . 'admin/display-columns.php' );
-		require_once( EBSS_INCLUDES . 'admin/duplicate-buttonss.php' );
-		require_once( EBSS_INCLUDES . 'admin/register-cpt-messages.php' );
+		// require_once( EBSS_INCLUDES . 'admin/display-columns.php' );
+		// require_once( EBSS_INCLUDES . 'admin/duplicate-buttonss.php' );
+		// require_once( EBSS_INCLUDES . 'admin/register-cpt-messages.php' );
 		//require_once( EBSS_INCLUDES . 'ROT13/encode-init.php' );
 	}
 
