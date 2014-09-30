@@ -1,0 +1,173 @@
+.buttons-listing .eros-buttons {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+ }
+
+
+.buttons-listing .eros-buttons .buttons-timezones {
+  float: right; 
+  width: 35%; 
+  padding: 2%;
+  margin: 0 0 20px 20px;
+  border-radius: 5%;
+  border: 3px solid rgba(77, 79, 83, .1);
+  background-color: rgba(224, 225, 221, 1);
+}
+
+.buttons-listing .eros-buttons h3.buttons-title {margin-top:0;}
+
+/* Button for Buttons */
+
+.wcbtn {
+  border: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+a.wcbtn {text-decoration: none; color: white;}
+
+.wcbtn:hover, .wcbtn:focus { outline: none; color: #ffffff;}
+.wcbtn:active, .wcbtn.active { outline: none; -webkit-box-shadow: none; box-shadow: none; }
+
+/* ---- [Button Block] --- */
+
+.wcbtn-block {
+  display: block;
+  text-align: center;
+  }
+
+  /* [Button Color: Sage Dark Grey] */
+
+.wcbtn-darkgrey, .wcbtn-darkgrey:hover, .wcbtn-darkgrey:focus, .wcbtn-darkgrey:active, .wcbtn-darkgrey.active {
+  color: #ffffff;
+}
+
+.wcbtn-darkgrey {
+  background-color: rgba(77, 79, 83, 1);
+}
+
+.wcbtn-darkgrey:hover, .wcbtn-darkgrey:focus, .wcbtn-darkgrey:active, .wcbtn-darkgrey.active {
+    background-color: rgba(77, 79, 83, .8); border-color: rgba(77, 79, 83, .8);
+}
+
+.wcbtn-darkgrey:active, .wcbtn-darkgrey.active {
+  background: rgba(77, 79, 83, .8); border-color: rgba(77, 79, 83, .8);
+}
+
+  /* [Button Color: Sage Dark Grey] */
+
+.wcbtn-blue, .wcbtn-blue:hover, .wcbtn-darkgrey:focus, .wcbtn-blue:active, .wcbtn-blue.active {
+  color: #ffffff;
+}
+
+.wcbtn-blue {
+  background-color: rgba(0, 159, 218, 1);
+}
+
+.wcbtn-blue:hover, .wcbtn-blue:focus, .wcbtn-blue:active, .wcbtn-blue.active {
+    background-color: rgba(0, 159, 218, .8); border-color: rgba(0, 159, 218, .8);
+}
+
+.wcbtn-blue:active, .wcbtn-blue.active {
+  background: rgba(0, 159, 218, .8); border-color: rgba(0, 159, 218, .8);
+}
+
+/* New Buttons Font */
+
+ span.webast-time:before, span.webast-date:before, a#ebss-anchor, a.buttons-twitter, a.buttons-facebook, span.buttons-register {
+    font-family: "eros-icon-font";
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 5px;
+ }
+
+span.webast-time:before {content: '\e802'; }
+span.webast-date:before {content: '\e801'; }
+a#ebss-anchor:before {content: '\e806';}
+a.buttons-twitter:before {content: '\e80b';}
+a.buttons-facebook:before {content: '\e809';}
+span.buttons-register:before {content: '\e804';}
+
+a.buttons-twitter, a.buttons-facebook, a#ebss-anchor {text-decoration: none; color:rgba(224, 225, 221, 0);}
+
+.buttons-listing .eros-buttons:hover a#ebss-anchor, .buttons-listing .eros-buttons:hover a.buttons-facebook, .buttons-listing .eros-buttons:hover a.buttons-twitter  {color:rgba(224, 225, 221, 1);}
+
+.buttons-listing .eros-buttons:hover a.buttons-twitter:hover {color:rgba(64,153,255, 1);}
+.buttons-listing .eros-buttons:hover a.buttons-facebook:hover {color:rgba(59,89,152, 1);}
+
+
+.buttons-timezones .buttons-humantime {text-align: center;}
+
+
+/*a.buttons-twitter, a.buttons-facebook {text-decoration: none; color:rgba(224, 225, 221, 0);}*/
+a.buttons-facebook:before {content: '\e809';}
+
+
+@font-face {
+  font-family: 'eros-icon-font';
+  src: url('../fonts/eros-icon-font/eros-icon-font.eot?26653554');
+  src: url('../fonts/eros-icon-font/eros-icon-font.eot?26653554#iefix') format('embedded-opentype'),
+       url('../fonts/eros-icon-font/eros-icon-font.woff?26653554') format('woff'),
+       url('../fonts/eros-icon-font/eros-icon-font.ttf?26653554') format('truetype'),
+       url('../fonts/eros-icon-font/eros-icon-font.svg?26653554#eros-icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'eros-icon-font';
+    src: url('../fonts/eros-icon-font/eros-icon-font.svg?26653554#eros-icon-font') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "eros-icon-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-link-ext:before { content: '\e800'; } /* '' */
+.icon-calendar:before { content: '\e801'; } /* '' */
+.icon-clock:before { content: '\e802'; } /* '' */
+.icon-globe:before { content: '\e803'; } /* '' */
+.icon-ticket:before { content: '\e804'; } /* '' */
+.icon-anchor:before { content: '\e805'; } /* '' */
+.icon-link:before { content: '\e806'; } /* '' */
+.icon-facebook-squared:before { content: '\e809'; } /* '' */
+.icon-twitter-squared:before { content: '\e80b'; } /* '' */
